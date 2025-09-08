@@ -17,6 +17,13 @@ interface TipFormProps {
   onTipSent?: (tip: any) => void;
 }
 
+interface TipFormErrors {
+  amount?: string;
+  token?: string;
+  recipient?: string;
+  message?: string;
+}
+
 export function TipForm({ recipientAddress, onTipSent }: TipFormProps) {
   const { connected, publicKey, sendTransaction } = useWallet();
   const { connection } = useConnection();
@@ -27,10 +34,10 @@ export function TipForm({ recipientAddress, onTipSent }: TipFormProps) {
     recipient: recipientAddress || '',
     message: '',
   });
-  const [errors, setErrors] = useState<Partial<TipFormData>>({});
+  const [errors, setErrors] = useState<TipFormErrors>({});
 
   const validateForm = (): boolean => {
-    const newErrors: Partial<TipFormData> = {};
+    const newErrors: TipFormErrors = {};
 
     if (!formData.recipient) {
       newErrors.recipient = 'Recipient address is required';
