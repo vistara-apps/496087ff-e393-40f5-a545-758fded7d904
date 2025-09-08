@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "TippyTip",
+    "subtitle": "Built with Zara",
+    "description": "TippyTip is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://496087ffe39340f5a545758fded7d904-0h4t.vercel.app",
+    "splashImageUrl": "https://496087ffe39340f5a545758fded7d904-0h4t.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://496087ffe39340f5a545758fded7d904-0h4t.vercel.app/image.png",
+    "tagline": "TippyTip",
+    "screenshotUrls": [
+      "https://496087ffe39340f5a545758fded7d904-0h4t.vercel.app/screenshot.png",
+      "https://496087ffe39340f5a545758fded7d904-0h4t.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://496087ffe39340f5a545758fded7d904-0h4t.vercel.app/api/webhook"
+  }
+}

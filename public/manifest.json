@@ -1,0 +1,14 @@
+{
+  "name": "TippyTip",
+  "description": "TippyTip is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://496087ff-e393-40f5-a545-758fded7d904.vercel.app",
+  "properties": {
+    "app": {
+      "name": "TippyTip",
+      "description": "TippyTip is a Base Mini App built with Zara.",
+      "url": "https://496087ff-e393-40f5-a545-758fded7d904.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
