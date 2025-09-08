@@ -17,6 +17,13 @@ interface TippingRulesProps {
   onRuleDelete?: (ruleId: string) => void;
 }
 
+interface RuleFormErrors {
+  triggerType?: string;
+  triggerValue?: string;
+  amount?: string;
+  token?: string;
+}
+
 export function TippingRules({ rules, onRuleCreate, onRuleToggle, onRuleDelete }: TippingRulesProps) {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState<RuleFormData>({
@@ -25,10 +32,10 @@ export function TippingRules({ rules, onRuleCreate, onRuleToggle, onRuleDelete }
     amount: 0.001,
     token: 'SOL',
   });
-  const [errors, setErrors] = useState<Partial<RuleFormData>>({});
+  const [errors, setErrors] = useState<RuleFormErrors>({});
 
   const validateForm = (): boolean => {
-    const newErrors: Partial<RuleFormData> = {};
+    const newErrors: RuleFormErrors = {};
 
     if (!formData.triggerValue.trim()) {
       newErrors.triggerValue = 'Trigger value is required';
